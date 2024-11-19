@@ -36,7 +36,7 @@ a=st.number_input('소득 입력(달러)', value = 0.0)
 b=st.number_input('아이 수', value = 0)
 c=st.number_selectbox('집 유무(없다:0, 있다:1)', [0,1])
 
-if st.button('신용등급판정')
+if st.button('신용등급판정'):
  input_data = [[a,b,c]]
  p=model.predict(input_data)
  st.write('인공지능한 당신의 신용등급은',p)
